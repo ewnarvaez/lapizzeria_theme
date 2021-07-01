@@ -1,0 +1,147 @@
+/*
+	Theme Name:  La Pizzeria
+	Theme URI: 
+	Author:  Edwin Willer Narváez Burbano
+	Author URI: http://edwinnarvaez.com
+	Description: Theme diseñado para pizzerias
+	Version: 1.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: CSS Grid, Gutenberg, Flexbox, mobile first
+	Text Domain: lapizzeria
+*/
+
+:root {
+
+	/* Familias tipográficas */
+	--fuentePrincipal:  'Open Sans', sans-serif;
+	--fuenteHeadings: 'Raleway', sans-serif;
+
+	/* Colores */
+	--rojo: #a61206;
+	--naranja: #f19f30;
+	--verde: #127427;
+
+	--blanco: #ffffff;
+	--negro: #000000;
+	--grisClaro: #c1c1c1;
+
+	/* Varios */
+	--contenedor: 1200px;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /* 10px = 1rem! */
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--fuentePrincipal);	
+	font-size: 16px; /* px fallback */
+  	font-size: 1.6rem; /* default font-size for document */
+  	line-height: 2; /* a nice line-height */
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 2;
+}
+
+h1,h2,h3,h4 {
+	font-family: var(--fuenteHeadings);
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2.4rem;
+}
+
+/* UTILIDADES */
+.text-center {
+	text-align: center;
+}
+
+/* GLOBALES */
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.contenedor {
+	width: 95%;
+	max-width: var(--contenedor);
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* HEADER */
+.site-header {
+	padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+	.site-header {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.logo {
+		grid-column: 2 / 3;
+	}
+}
+
+.logo a {
+	display: flex;
+	justify-content: center;
+}
+
+.logo img {
+	width: 80%;
+	max-width: 30rem;
+}
+
+@media (min-width: 768px) {
+	.informacion-header {
+		grid-column: 3 / 4;
+	}
+}
+
+.direccion {
+	padding: 2rem 0;
+}
+
+.direccion p {
+	margin: 0;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.direccion p {
+		text-align: right;
+		line-height: 1.5;
+	}
+}
