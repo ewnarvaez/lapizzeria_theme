@@ -35,7 +35,7 @@ html {
 	font-size: 62.5%; /* 10px = 1rem! */
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
 	box-sizing: inherit;
 }
 
@@ -258,3 +258,48 @@ img {
 	color: var(--naranja) !important;
 }
 
+/** Footer **/
+.site-footer {
+	margin-top: 3rem;
+	padding: 3rem 0;
+	border-top: 1px solid var(--grisClaro);
+}
+
+@media (min-width: 768px) {
+	.footer-nav .menu {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.footer-nav .menu li {
+	text-align: center;
+}
+
+.footer-nav .menu a {
+	color: var(--negro);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.4rem;
+	font-family: var(--fuenteHeadings);
+}
+
+.separador {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.separador {
+		display: inline;
+		margin: 0 2rem;
+	}
+
+	.footer-nav li:last-of-type .separador {
+		display: none;
+	}
+}
+
+.site-footer .direccion p {
+	text-align: center;
+	font-size: 1.4rem;
+}
