@@ -105,7 +105,7 @@ img {
 }
 
 @media (min-width: 768px) {
-	.site-header {
+	.site-header .contenedor {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -122,6 +122,53 @@ img {
 .logo img {
 	width: 80%;
 	max-width: 30rem;
+}
+
+/** Redes Sociales **/
+.redes-sociales {
+	margin-top: 1rem;
+}
+.sr-text {
+	display: none;
+}
+
+.sociales ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 3rem);
+	column-gap: 1rem;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.sociales ul {
+		justify-content: end;
+	}
+}
+
+.sociales a::before {
+	content: '';
+	display: inline-block;
+	height: 3rem;
+	width: 3rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 3rem;
+}
+
+.sociales a[href*="facebook"]::before {
+	background-image: url('img/icons/facebook.svg');
+}
+
+.sociales a[href*="twitter"]::before {
+	background-image: url('img/icons/twitter.svg');
+}
+
+.sociales a[href*="youtube"]::before {
+	background-image: url('img/icons/youtube.svg');
+}
+
+.sociales a[href*="instagram"]::before {
+	background-image: url('img/icons/instagram.svg');
 }
 
 @media (min-width: 768px) {
@@ -145,3 +192,69 @@ img {
 		line-height: 1.5;
 	}
 }
+
+/** Menu Escritorio **/
+/* En movil el menú de escritorio se oculta */
+.menu-principal {
+	display: none;
+}
+
+/* Se muestra el menu de escritorio una vez que se alcanza un tamaño de 768px */
+@media (min-width: 768px) {
+	.menu-principal {
+		border-top: solid 1px var(--grisClaro);
+		margin-top: 3rem;
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.slicknav_menu {
+		display: none;
+	}
+
+	.menu-sitio .menu {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.menu-sitio .menu li {
+		flex: 1;
+	}
+
+	.menu-sitio .menu li:hover {
+		background-color: var(--naranja);
+	}
+
+	.menu-sitio .menu li.current_page_item a {
+		border-bottom: solid .5rem var(--rojo);
+	}
+
+	.menu-sitio .menu a {
+		font-family: var(--fuentePrincipal);
+		text-transform: uppercase;
+		color: var(--negro);
+		padding: 1rem;
+		display: block;
+		font-weight: 700;
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+/** Menu Responsive **/
+.slicknav_menu {
+	background-color: var(--rojo) !important;
+}
+
+.slicknav_nav a {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.slicknav_nav a:hover {
+	background-color: transparent !important;
+	color: var(--naranja) !important;
+}
+
