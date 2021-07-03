@@ -1,5 +1,12 @@
 <?php 
 
+function lapizzeria_setup() {
+
+	// Imagenes destacadas
+	add_theme_support( 'post-thumbnails' );
+}
+add_action('after_setup_theme', 'lapizzeria_setup');
+
 /** CSS y JavaScript **/
 function lapizzeria_styles() {
 

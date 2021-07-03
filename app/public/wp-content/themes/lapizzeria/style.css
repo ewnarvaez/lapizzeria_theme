@@ -72,11 +72,6 @@ h4 {
 	font-size: 2.4rem;
 }
 
-/* UTILIDADES */
-.text-center {
-	text-align: center;
-}
-
 /* GLOBALES */
 a {
 	text-decoration: none;
@@ -97,6 +92,24 @@ ul {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* UTILIDADES */
+.text-center {
+	text-align: center;
+}
+
+.seccion {
+	padding: 1rem;
+}
+
+@media (min-width: 768px) {
+	.seccion {
+		position: relative;
+		background-color: var(--blanco);
+		margin-top: -9rem;
+		padding: 6rem;
+	}
 }
 
 /* HEADER */
@@ -303,3 +316,35 @@ img {
 	text-align: center;
 	font-size: 1.4rem;
 }
+
+/** Template paginas **/
+.hero {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 45rem;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero::after {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+}
+
+.hero h1 {
+	color: var(--blanco);
+	z-index: 1;
+	/* para que funcione el z-index es necesario que el bloque tenga position relative */
+	position: relative;
+}
+
