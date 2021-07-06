@@ -103,6 +103,44 @@ img {
 	padding: 1rem;
 }
 
+/** BOTONES **/
+.boton {
+	/* para que ocupe todo el ancho disponible */
+	display: block;
+	/* para que ocupe todo el ancho disponible si esta dentro de un contenedor flex*/
+	flex: 1;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.4rem;
+	font-family: var(--fuenteHeadings);
+	padding: 1rem 3rem;
+	border-radius: .5rem;
+	color: var(--blanco);
+	border: none;
+}
+
+.boton:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.boton {
+		/* para que NO ocupe todo el ancho disponible */
+		display: inline-block;
+		/* para que NO ocupe todo el ancho disponible si esta dentro de un contenedor flex*/
+		flex: 0 0 auto;
+	}
+}
+
+.boton-primario {
+	background-color: var(--naranja);
+}
+
+.boton-secundario {
+	background-color: var(--rojo);
+}
+
 @media (min-width: 768px) {
 	.seccion {
 		position: relative;
@@ -348,3 +386,230 @@ img {
 	position: relative;
 }
 
+/** Blog **/
+@media (min-width: 768px) {
+	.con-sidebar {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 4rem;
+	}
+}
+
+.entrada-blog {
+	padding-top: 3rem;
+	padding-bottom: 4rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid var(--grisClaro);
+}
+
+.entrada-blog:last-of-type {
+	border: none;
+}
+
+.informacion-entrada {
+	display: grid;
+	grid-template-columns: 7rem 1fr;
+	grid-gap: 2rem;
+	margin-bottom: 2rem;
+}
+
+.informacion-entrada .fecha {
+	background-color: var(--naranja);
+	height: 7rem;
+	text-align: center;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.informacion-entrada .fecha time {
+	font-size: 3rem;
+	font-family: var(--fuenteHeadings);
+	font-weight: 700;
+}
+
+.informacion-entrada .fecha time span {
+	font-size: 1.6rem;
+	display: block;
+	text-transform: uppercase;
+}
+
+.informacion-entrada h2 {
+	margin: 0;
+}
+
+.entrada-blog p.autor {
+	text-transform: uppercase;
+	font-family: var(--fuenteHeadings);
+	margin-bottom: 2rem;
+}
+
+.autor span {
+	color: var(--naranja);
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.entrada-blog p {
+	margin: .5rem 0;
+	line-height: 1.5;
+}
+
+.entrada-blog .boton {
+	margin-top: 2rem;
+}
+
+/** PAGINACIÓN **/
+.paginacion {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.paginacion a:first-of-type {
+	margin-right: 2rem;
+}
+
+/** SIDEBAR **/
+.searchform {
+	position: relative;
+}
+
+.searchform label {
+	display: none;
+}
+
+.searchform div {
+	display: flex;
+}
+
+.searchform input[type="text"] {
+	flex: 1;
+	padding: 1rem;
+}
+
+.searchform input[type="submit"] {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 5rem;
+	background-color: var(--rojo);
+	background-image: url('img/buscador.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+	text-indent: -9999px;
+	display: block;
+}
+
+.searchform input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.widget h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.widget a {
+	color: var(--negro);
+}
+
+.widget a:hover {
+	color: var(--naranja);
+}
+
+/** COMENTARIOS **/
+.comentarios h3 {
+	font-weight: 700;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.comentarios {
+		width: 60%;
+	}
+}
+
+.comentarios a {
+	color: var(--naranja);
+}
+
+.comentarios a:hover {
+	color: var(--rojo);
+}
+
+.comentarios .logged-in-as {
+	display: flex;
+	justify-content: center;
+}
+
+.comentarios .logged-in-as {
+	color: var(--naranja);
+}
+
+.comentarios .logged-in-as a:last-of-type {
+	margin-left: 1rem;
+}
+
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.comment-form-comment label,
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label {		
+	font-weight: bold;
+	flex: 0 0 100%;
+	margin-right: 2rem;
+}
+
+.comment-form input:not([type="submit"]),
+.comment-form textarea {
+	flex: 1;
+	border: solid 1px var(--grisClaro);
+	padding: 1rem;
+}
+
+
+@media (min-width: 768px) {	
+	.comment-form-comment label,
+	.comment-form-author label,
+	.comment-form-email label,
+	.comment-form-url label {
+		flex: 0 0 20rem;
+		text-align: right;		
+	}
+}
+
+.form-submit {
+	display: flex;
+	justify-content: center;
+}
+
+.lista-comentarios .comment {
+	padding: 2rem;
+	margin-bottom: 2rem;
+	background-color: #f6f6f6;
+	border-bottom: 3px solid var(--rojo);
+}
+
+.lista-comentarios .comment cite {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.lista-comentarios .comment ul.children li {
+	background-color: var(--blanco);
+	margin-top: 2rem;
+	border: none;
+}
