@@ -1,0 +1,25 @@
+{
+  "name": "lapizzeria-gutenberg",
+  "version": "1.0.0",
+  "description": "Agrega bloques de Gutenberg nativos",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewnarvaez/lapizzeria_theme.git"
+  },
+  "author": "Edwin Willer Narváez Burbano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewnarvaez/lapizzeria_theme/issues"
+  },
+  "homepage": "https://github.com/ewnarvaez/lapizzeria_theme#readme",
+  "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "@wordpress/scripts": "^16.1.4",
+    "url-loader": "^4.1.1"
+  }
+}

@@ -2,6 +2,48 @@
 
 function lapizzeria_setup() {
 
+	/** Gutenberg **/
+
+	// Soporte a los estilos por default de Gutenberg en tu tema
+	add_theme_support('wp-block-styles');
+
+	// Paleta de colores del tema
+	add_theme_support('editor-color-palette', array(
+		array(
+			'name' => 'Rojo',
+			'slug' => 'rojo',
+			'color' => '#a61206'
+		),
+		array(
+			'name' => 'Naranja',
+			'slug' => 'naranja',
+			'color' => '#f19f30'
+		),
+		array(
+			'name' => 'Verde',
+			'slug' => 'verde',
+			'color' => '#127427'
+		),
+		array(
+			'name' => 'Blanco',
+			'slug' => 'blanco',
+			'color' => '#ffffff'
+		),
+		array(
+			'name' => 'Negro',
+			'slug' => 'negro',
+			'color' => '#000000'
+		),
+		array(
+			'name' => 'Gris',
+			'slug' => 'gris',
+			'color' => '#c1c1c1'
+		)
+	));
+
+	// Deshabilita los colores personalizados
+	add_theme_support('disable-custom-colors');
+
 	// Imagenes destacadas
 	add_theme_support( 'post-thumbnails' );
 
@@ -64,5 +106,5 @@ add_action('widgets_init', 'lapizzeria_widgets');
 function lapizzeria_botones_paginador() {
 	return 'class="boton boton-secundario"';
 }
-add_filter( 'next_posts_link_attributes', 'lapizzeria_botones_paginador' );
 add_filter( 'previous_posts_link_attributes', 'lapizzeria_botones_paginador' );
+add_filter( 'next_posts_link_attributes', 'lapizzeria_botones_paginador' );

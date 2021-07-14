@@ -1,0 +1,16 @@
+.wp-block {
+    max-width: 1080px;
+}
+
+.block-editor-writing-flow {
+    padding-left: 3rem;
+}
+
+.box {
+    height: 24rem;
+    padding: 4rem 2rem;
+}
+
+.wp-block-image .components-resizable-box__container img {
+    height: 24rem;
+}
