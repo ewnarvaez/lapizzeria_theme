@@ -891,3 +891,7 @@
 [16-Jul-2021 01:11:51 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
 [16-Jul-2021 01:11:51 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
 [16-Jul-2021 01:11:51 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[16-Jul-2021 01:58:03 UTC] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 108
+[16-Jul-2021 02:00:04 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 113
+[16-Jul-2021 02:00:48 UTC] PHP Parse error:  syntax error, unexpected '$cuerpo' (T_VARIABLE) in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 133
+[16-Jul-2021 02:00:51 UTC] PHP Parse error:  syntax error, unexpected '$cuerpo' (T_VARIABLE) in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 133

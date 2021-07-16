@@ -14,3 +14,13 @@
 .wp-block-image .components-resizable-box__container img {
     height: 24rem;
 }
+
+/** Bloque Menu **/ 
+
+.editor-styles-wrapper .titulo-menu {
+    color: var(--rojo);
+    font-family: var(--fuenteHeadings);
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+}

@@ -68,7 +68,7 @@
 
 /** Bloque Menu**/
 
-.editor-styles-wrapper .titulo-menu {
+.titulo-menu {
     color: var(--rojo);
     font-family: var(--fuenteHeadings);
     text-align: left;
@@ -94,7 +94,7 @@
     }
 }
 
-.precio-titulo {
+.precio-platillo {
     border-bottom: 1px solid #dfdfdd;
     display: flex;
     justify-content: space-between;
@@ -102,14 +102,14 @@
     padding: 0 1rem;
 }
 
-.precio-titulo h3 {
+.precio-platillo h3 {
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
     font-size: 2.2rem;
 }
 
-.precio-titulo p {
+.precio-platillo p {
     color: var(--naranja);
     font-family: var(--fuenteHeadings);
     font-weight: 700;

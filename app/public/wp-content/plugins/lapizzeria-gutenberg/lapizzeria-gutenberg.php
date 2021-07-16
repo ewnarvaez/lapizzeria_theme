@@ -100,20 +100,26 @@ function lapizzeria_especialidades_frontend($atts) { // con $atts podemos accede
 	// var_dump($atts);
 	// echo "</pre>";
 
-	
+	// Extraer los valores y agregar default
+	$cantidad = $atts['cantidadMostrar'] ? $atts['cantidadMostrar'] : 2;
+	$titulo_bloque = $atts['tituloBloque'] ? $atts['tituloBloque'] : 'Nuestras Especialidades';
+	$tax_query = array();
+
+	if(isset($atts['categoriaMenu'])) {
+		$tax_query[] = array(
+			'taxonomy' => 'categoria-menu',
+			'terms' => $atts['categoriaMenu'],
+			'field' => 'term_id'
+		);
+	}
+
 
 	// Obtener los datos del Query
 	$especialidades = wp_get_recent_posts(array(
 		'post_type' => 'especialidades',
 		'post_status' => 'publish',
 		'numberposts' => $atts['cantidadMostrar'],
-		'tax_query' => array(
-			array(
-				'taxonomy' => 'categoria-menu',		// Toda esta información se extrae de los echo's superiores
-				'terms' => $atts['categoriaMenu'],
-				'field' => 'term_id'
-			)
-		)
+		'tax_query' => $tax_query
 	));
 
 	// Revisar que haya resultados
@@ -123,7 +129,7 @@ function lapizzeria_especialidades_frontend($atts) { // con $atts podemos accede
 
 	$cuerpo = '';
 	$cuerpo .= '<h2 class="titulo-menu">';
-	$cuerpo .= $atts['tituloBloque'];
+	$cuerpo .= $titulo_bloque;
 	$cuerpo .= '</h2>';
 	$cuerpo .= '<ul class="nuestro-menu">';
 	foreach($especialidades as $esp):
