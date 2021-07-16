@@ -284,7 +284,219 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _boxes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./boxes */ "./src/boxes/index.js");
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu/index.js");
 
+
+
+/***/ }),
+
+/***/ "./src/menu/index.js":
+/*!***************************!*\
+  !*** ./src/menu/index.js ***!
+  \***************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _pizzeria_icon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pizzeria-icon.svg */ "./src/pizzeria-icon.svg");
+
+
+ // se usa para hacer la consulta a la REST API
+
+
+ // Logo para el bloque
+
+
+/**
+ * 7 Pasos para crear un bloque en Gutenberg
+ * 1. Importar el componente(s) que utilizarás
+ * 2. Coloca el componente donde deseas utilizarlo
+ * 3. Crea una función que lea los contenidos
+ * 4. Registra un atributo
+ * 5. Extraer el contenido desde props
+ * 6. Guarda el contenido con setAttributes
+ * 7. Lee los contenidos guardados con save()
+ * */
+
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lapizzeria/menu', {
+  title: 'La Pizzeria Menu',
+  icon: {
+    src: _pizzeria_icon_svg__WEBPACK_IMPORTED_MODULE_5__["ReactComponent"]
+  },
+  category: 'lapizzeria',
+  attributes: {
+    cantidadMostrar: {
+      type: 'number'
+    },
+    categoriaMenu: {
+      type: 'number',
+      default: 4
+    },
+    tituloBloque: {
+      type: 'string',
+      default: 'Titulo Bloque'
+    }
+  },
+  edit: Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["withSelect"])((select, props) => {
+    // extraer los valores
+    const {
+      attributes: {
+        cantidadMostrar,
+        categoriaMenu,
+        tituloBloque
+      },
+      setAttributes
+    } = props;
+
+    const onChangeCantidadMostrar = nuevaCantidad => {
+      setAttributes({
+        cantidadMostrar: parseInt(nuevaCantidad)
+      });
+    };
+
+    const onChangeCategoriaMenu = nuevaCategoria => {
+      setAttributes({
+        categoriaMenu: nuevaCategoria
+      });
+    };
+
+    const onChangeTituloBloque = nuevoTitulo => {
+      setAttributes({
+        tituloBloque: nuevoTitulo
+      });
+    };
+
+    return {
+      // Enviar una petición a la api
+      categorias: select("core").getEntityRecords('taxonomy', 'categoria-menu'),
+      especialidades: select("core").getEntityRecords('postType', 'especialidades', {
+        'categoria-menu': categoriaMenu,
+        per_page: cantidadMostrar || 6
+      }),
+      onChangeCantidadMostrar,
+      onChangeCategoriaMenu,
+      onChangeTituloBloque,
+      props
+    };
+  })(({
+    categorias,
+    especialidades,
+    onChangeCantidadMostrar,
+    onChangeCategoriaMenu,
+    onChangeTituloBloque,
+    props
+  }) => {
+    // extraer los props
+    const {
+      attributes: {
+        cantidadMostrar,
+        categoriaMenu,
+        tituloBloque
+      }
+    } = props; // verificar especialidades
+
+    if (!especialidades) {
+      return 'Cargando...';
+    } // si no hay especialidades
+
+
+    if (especialidades && especialidades.length === 0) {
+      return 'No hay resultados';
+    } // verificar categorias
+
+
+    if (!categorias) {
+      console.log('No hay categorias');
+      return null;
+    } // si no hay categorias
+
+
+    if (categorias && categorias.length === 0) {
+      console.log('No hay resultados');
+      return null;
+    } // Generar label y value a categorias
+
+
+    if (categorias && categorias.length != 0) {
+      categorias.forEach(categoria => {
+        categoria['label'] = categoria.name;
+        categoria['value'] = categoria.id;
+      });
+    } // Arreglo con valores por default (para agregar la opción Todos a las categorias)
+    // const opcionDefault = [{ value: '', label: ' -- Todos -- '}];
+    // const listadoCategorias = [...opcionDefault, ...categorias ];		
+
+
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["InspectorControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["PanelBody"], {
+      title: 'Ajustes Cantidad',
+      initialOpen: true
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "components-base-control"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "components-base-control__field"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("label", {
+      className: "components-base-control__label"
+    }, "Cantidad a Mostrar"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["RangeControl"], {
+      onChange: onChangeCantidadMostrar,
+      min: 2,
+      max: 10,
+      value: cantidadMostrar || 6
+    })))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["PanelBody"], {
+      title: 'Ajustes Categorias',
+      initialOpen: false
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "components-base-control"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "components-base-control__field"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("label", {
+      className: "components-base-control__label"
+    }, "Categoria de especialidad"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["SelectControl"], {
+      options: categorias,
+      onChange: onChangeCategoriaMenu,
+      value: categoriaMenu
+    })))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["PanelBody"], {
+      title: 'Titulo Bloque',
+      initialOpen: false
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "components-base-control"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "components-base-control__field"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("label", {
+      className: "components-base-control__label"
+    }, "Titulo Bloque"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["TextControl"], {
+      onChange: onChangeTituloBloque,
+      value: tituloBloque
+    }))))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h2", {
+      className: "titulo-menu"
+    }, tituloBloque), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("ul", {
+      className: "nuestro-menu"
+    }, especialidades.map(especialidad => Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("li", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("img", {
+      src: especialidad.imagen_destacada
+    }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "platillo"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "precio-platillo"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", null, especialidad.title.rendered), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "$ ", especialidad.precio))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      className: "contenido-platillo"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, {
+      value: especialidad.content.rendered
+    })))))));
+  }),
+  save: () => {
+    return null; // no se retorna nada por aquí, el retorno se hace en el callback que esta en lapizzeria-gutenberg.php
+  }
+});
 
 /***/ }),
 
@@ -356,6 +568,17 @@ function SvgPizzeriaIcon(props) {
 /***/ (function(module, exports) {
 
 (function() { module.exports = window["wp"]["components"]; }());
+
+/***/ }),
+
+/***/ "@wordpress/data":
+/*!******************************!*\
+  !*** external ["wp","data"] ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = window["wp"]["data"]; }());
 
 /***/ }),
 

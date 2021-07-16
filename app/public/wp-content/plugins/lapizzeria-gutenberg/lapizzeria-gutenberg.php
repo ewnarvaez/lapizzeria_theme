@@ -69,11 +69,91 @@ function lapizzeria_registrar_bloques() {
 
 	// Recorrer bloques y agregar scripts y styles
 	foreach ($blocks as $block) {
-		register_block_type($block, array(
+		register_block_type($block, 
+			array(
+				'editor_script' => 'lapizzeria-editor-script', // script principal para el editor
+				'editor_style' => 'lapizzeria-editor-styles', // estilos para el editor
+				'style' => 'lapizzeria-frontend-styles' // estilos para el frontend
+			)
+		);
+	}
+
+	/** REGISTRAR UN BLOQUE DINÁMICO **/
+	register_block_type( 'lapizzeria/menu', 
+		array(
 			'editor_script' => 'lapizzeria-editor-script', // script principal para el editor
 			'editor_style' => 'lapizzeria-editor-styles', // estilos para el editor
-			'style' => 'lapizzeria-frontend-styles' // estilos para el frontend
-		));
-	}
+			'style' => 'lapizzeria-frontend-styles', // estilos para el frontend
+			'render_callback' => 'lapizzeria_especialidades_frontend' // Query a la base de datos
+		)
+	);
+
 }
 add_action('init', 'lapizzeria_registrar_bloques');
+
+
+/** CONSULTA LA BASE DE DATOS PARA MOSTRAR LOS RESULTADOS EN EL FRONTEND **/
+
+function lapizzeria_especialidades_frontend($atts) { // con $atts podemos acceder a los atributos en este caso la cantidad a mostrar
+
+	// echo "<pre>";
+	// var_dump($atts);
+	// echo "</pre>";
+
+	
+
+	// Obtener los datos del Query
+	$especialidades = wp_get_recent_posts(array(
+		'post_type' => 'especialidades',
+		'post_status' => 'publish',
+		'numberposts' => $atts['cantidadMostrar'],
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'categoria-menu',		// Toda esta información se extrae de los echo's superiores
+				'terms' => $atts['categoriaMenu'],
+				'field' => 'term_id'
+			)
+		)
+	));
+
+	// Revisar que haya resultados
+	if(count($especialidades) == 0) {
+		return 'No hay especialidades';
+	}
+
+	$cuerpo = '';
+	$cuerpo .= '<h2 class="titulo-menu">';
+	$cuerpo .= $atts['tituloBloque'];
+	$cuerpo .= '</h2>';
+	$cuerpo .= '<ul class="nuestro-menu">';
+	foreach($especialidades as $esp):
+		// obtener un objeto del post
+		$post = get_post($esp['ID']);
+		setup_postdata($post); // permite acceder a los template tags del post
+
+		$cuerpo .= sprintf(
+			'<li>
+				%1$s
+				<div class="platillo">
+					<div class="precio-platillo">
+						<h3>%2$s</h3>
+						<p>$ %3$s</p>
+					</div>
+				</div>
+				<div class="contenido-platillo">
+					<p>%4$s</p>								
+				</div>
+			</li>',
+			get_the_post_thumbnail($post, 'especialidades'), // se remplaza por el 1 (thumbnail)
+			get_the_title($post), // se remplaza en el h3 por el 2
+			get_field('precio', $post),
+			get_the_content($post)
+
+		);
+		wp_reset_postdata();
+
+	endforeach;
+	$cuerpo .= '</ul>';
+
+	return $cuerpo;
+}
