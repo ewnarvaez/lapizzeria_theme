@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ewnarvaez/lapizzeria_theme#readme",
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
-    "@wordpress/scripts": "^16.1.4",
+    "@wordpress/scripts": "^6.2.0",
     "url-loader": "^4.1.1"
   }
 }

@@ -895,3 +895,453 @@
 [16-Jul-2021 02:00:04 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 113
 [16-Jul-2021 02:00:48 UTC] PHP Parse error:  syntax error, unexpected '$cuerpo' (T_VARIABLE) in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 133
 [16-Jul-2021 02:00:51 UTC] PHP Parse error:  syntax error, unexpected '$cuerpo' (T_VARIABLE) in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 133
+[17-Jul-2021 22:49:11 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 22:49:11 UTC] PHP Stack trace:
+[17-Jul-2021 22:49:11 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:49:11 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:49:11 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:49:11 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:49:11 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:49:11 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:49:11 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:49:11 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:49:11 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 22:49:11 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 22:49:11 UTC] PHP Stack trace:
+[17-Jul-2021 22:49:11 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:49:11 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:49:11 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:49:11 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:49:11 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:49:11 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:49:11 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:49:11 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:49:11 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 22:51:12 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 22:51:12 UTC] PHP Stack trace:
+[17-Jul-2021 22:51:12 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:51:12 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:51:12 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:51:12 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:51:12 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:51:12 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:51:12 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:51:12 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:51:12 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 22:51:12 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 22:51:12 UTC] PHP Stack trace:
+[17-Jul-2021 22:51:12 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:51:12 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:51:12 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:51:12 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:51:12 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:51:12 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:51:12 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:51:12 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:51:12 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 22:53:13 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 22:53:13 UTC] PHP Stack trace:
+[17-Jul-2021 22:53:13 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:53:13 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:53:13 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:53:13 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:53:13 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:53:13 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:53:13 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:53:13 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:53:13 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 22:53:13 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 22:53:13 UTC] PHP Stack trace:
+[17-Jul-2021 22:53:13 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:53:13 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:53:13 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:53:13 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:53:13 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:53:13 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:53:13 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:53:13 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:53:13 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 22:55:14 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 22:55:14 UTC] PHP Stack trace:
+[17-Jul-2021 22:55:14 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:55:14 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:55:14 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:55:14 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:55:14 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:55:14 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:55:14 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:55:14 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:55:14 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 22:55:14 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 22:55:14 UTC] PHP Stack trace:
+[17-Jul-2021 22:55:14 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 22:55:14 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 22:55:14 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 22:55:14 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 22:55:14 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 22:55:14 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 22:55:14 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 22:55:14 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 22:55:14 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:24:00 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:24:00 UTC] PHP Stack trace:
+[17-Jul-2021 23:24:00 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:24:00 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:24:00 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:24:00 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:24:00 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:24:00 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:24:00 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:24:00 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:24:00 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:24:00 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:24:00 UTC] PHP Stack trace:
+[17-Jul-2021 23:24:00 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:24:00 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:24:00 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:24:00 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:24:00 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:24:00 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:24:00 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:24:00 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:24:00 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:24:01 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:24:01 UTC] PHP Stack trace:
+[17-Jul-2021 23:24:01 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-cron.php:0
+[17-Jul-2021 23:24:01 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-cron.php:44
+[17-Jul-2021 23:24:01 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:24:01 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:24:01 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:24:01 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:24:01 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:24:01 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:24:01 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:24:01 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:24:01 UTC] PHP Stack trace:
+[17-Jul-2021 23:24:01 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-cron.php:0
+[17-Jul-2021 23:24:01 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-cron.php:44
+[17-Jul-2021 23:24:01 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:24:01 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:24:01 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:24:01 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:24:01 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:24:01 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:24:01 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:25:04 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:25:04 UTC] PHP Stack trace:
+[17-Jul-2021 23:25:04 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:25:04 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:25:04 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:25:04 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:25:04 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:25:04 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:25:04 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:25:04 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:25:04 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:25:04 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:25:04 UTC] PHP Stack trace:
+[17-Jul-2021 23:25:04 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:25:04 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:25:04 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:25:04 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:25:04 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:25:04 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:25:04 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:25:04 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:25:04 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:27:05 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:27:05 UTC] PHP Stack trace:
+[17-Jul-2021 23:27:05 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:27:05 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:27:05 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:27:05 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:27:05 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:27:05 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:27:05 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:27:05 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:27:05 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:27:05 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:27:05 UTC] PHP Stack trace:
+[17-Jul-2021 23:27:05 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:27:05 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:27:05 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:27:05 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:27:05 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:27:05 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:27:05 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:27:05 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:27:05 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:29:06 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:29:06 UTC] PHP Stack trace:
+[17-Jul-2021 23:29:06 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:29:06 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:29:06 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:29:06 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:29:06 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:29:06 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:29:06 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:29:06 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:29:06 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:29:06 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:29:06 UTC] PHP Stack trace:
+[17-Jul-2021 23:29:06 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:29:06 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:29:06 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:29:06 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:29:06 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:29:06 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:29:06 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:29:06 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:29:06 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:31:08 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:31:08 UTC] PHP Stack trace:
+[17-Jul-2021 23:31:08 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:31:08 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:31:08 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:31:08 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:31:08 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:31:08 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:31:08 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:31:08 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:31:08 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:31:08 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:31:08 UTC] PHP Stack trace:
+[17-Jul-2021 23:31:08 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:31:08 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:31:08 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:31:08 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:31:08 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:31:08 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:31:08 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:31:08 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:31:08 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:32:28 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:32:28 UTC] PHP Stack trace:
+[17-Jul-2021 23:32:28 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:32:28 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:32:28 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:32:28 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:32:28 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:32:28 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:32:28 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:32:28 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:32:28 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:32:28 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:32:28 UTC] PHP Stack trace:
+[17-Jul-2021 23:32:28 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:32:28 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:32:28 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:32:28 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:32:28 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:32:28 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:32:28 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:32:28 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:32:28 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:33:29 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/index.js in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 46
+[17-Jul-2021 23:33:29 UTC] PHP Stack trace:
+[17-Jul-2021 23:33:29 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:33:29 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:33:29 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:33:29 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:33:29 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:33:29 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:33:29 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:33:29 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:33:29 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:46
+[17-Jul-2021 23:33:29 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:33:29 UTC] PHP Stack trace:
+[17-Jul-2021 23:33:29 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:33:29 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:33:29 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:33:29 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:33:29 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:33:29 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:33:29 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:33:29 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:33:29 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:33:29 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:33:29 UTC] PHP Stack trace:
+[17-Jul-2021 23:33:29 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:33:29 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:33:29 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:33:29 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:33:29 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:33:29 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:33:29 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:33:29 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:33:29 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:34:29 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/index.js in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 46
+[17-Jul-2021 23:34:29 UTC] PHP Stack trace:
+[17-Jul-2021 23:34:29 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:34:29 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:34:29 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:34:29 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:34:29 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:34:29 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:34:29 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:34:29 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:34:29 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:46
+[17-Jul-2021 23:34:29 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:34:29 UTC] PHP Stack trace:
+[17-Jul-2021 23:34:29 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:34:29 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:34:29 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:34:29 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:34:29 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:34:29 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:34:29 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:34:29 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:34:29 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:34:29 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:34:29 UTC] PHP Stack trace:
+[17-Jul-2021 23:34:29 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:34:29 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:34:29 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:34:29 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:34:29 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:34:29 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:34:29 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:34:29 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:34:29 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:36:32 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/index.js in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 46
+[17-Jul-2021 23:36:32 UTC] PHP Stack trace:
+[17-Jul-2021 23:36:32 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:36:32 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:36:32 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:36:32 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:36:32 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:36:32 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:36:32 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:36:32 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:36:32 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:46
+[17-Jul-2021 23:36:32 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:36:32 UTC] PHP Stack trace:
+[17-Jul-2021 23:36:32 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:36:32 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:36:32 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:36:32 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:36:32 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:36:32 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:36:32 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:36:32 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:36:32 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:36:32 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:36:32 UTC] PHP Stack trace:
+[17-Jul-2021 23:36:32 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:36:32 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:36:32 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:36:32 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:36:32 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:36:32 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:36:32 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:36:32 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:36:32 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:38:42 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/index.js in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 46
+[17-Jul-2021 23:38:42 UTC] PHP Stack trace:
+[17-Jul-2021 23:38:42 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:38:42 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:38:42 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:38:42 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:38:42 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:38:42 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:38:42 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:38:42 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:38:42 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:46
+[17-Jul-2021 23:38:42 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:38:42 UTC] PHP Stack trace:
+[17-Jul-2021 23:38:42 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:38:42 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:38:42 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:38:42 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:38:42 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:38:42 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:38:42 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:38:42 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:38:42 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:38:42 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:38:42 UTC] PHP Stack trace:
+[17-Jul-2021 23:38:42 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:38:42 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:38:42 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:38:42 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:38:42 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:38:42 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:38:42 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:38:42 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:38:42 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:40:37 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/index.js in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 46
+[17-Jul-2021 23:40:37 UTC] PHP Stack trace:
+[17-Jul-2021 23:40:37 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:40:37 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:40:37 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:40:37 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:40:37 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:40:37 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:40:37 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:40:37 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:40:37 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:46
+[17-Jul-2021 23:40:37 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:40:37 UTC] PHP Stack trace:
+[17-Jul-2021 23:40:37 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:40:37 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:40:37 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:40:37 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:40:37 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:40:37 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:40:37 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:40:37 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:40:37 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:40:37 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:40:37 UTC] PHP Stack trace:
+[17-Jul-2021 23:40:37 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:40:37 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:40:37 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:40:37 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:40:37 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:40:37 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:40:37 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:40:37 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:40:37 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[17-Jul-2021 23:42:34 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/index.js in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 46
+[17-Jul-2021 23:42:34 UTC] PHP Stack trace:
+[17-Jul-2021 23:42:34 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:42:34 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:42:34 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:42:34 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:42:34 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:42:34 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:42:34 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:42:34 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:42:34 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:46
+[17-Jul-2021 23:42:34 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/editor.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 54
+[17-Jul-2021 23:42:34 UTC] PHP Stack trace:
+[17-Jul-2021 23:42:34 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:42:34 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:42:34 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:42:34 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:42:34 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:42:34 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:42:34 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:42:34 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:42:34 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:54
+[17-Jul-2021 23:42:34 UTC] PHP Warning:  filemtime(): stat failed for C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg/build/style.css in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 62
+[17-Jul-2021 23:42:34 UTC] PHP Stack trace:
+[17-Jul-2021 23:42:34 UTC] PHP   1. {main}() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:0
+[17-Jul-2021 23:42:34 UTC] PHP   2. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-admin\admin-ajax.php:22
+[17-Jul-2021 23:42:34 UTC] PHP   3. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-load.php:37
+[17-Jul-2021 23:42:34 UTC] PHP   4. require_once() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-config.php:77
+[17-Jul-2021 23:42:34 UTC] PHP   5. do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-settings.php:560
+[17-Jul-2021 23:42:34 UTC] PHP   6. WP_Hook->do_action() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\plugin.php:484
+[17-Jul-2021 23:42:34 UTC] PHP   7. WP_Hook->apply_filters() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:316
+[17-Jul-2021 23:42:34 UTC] PHP   8. lapizzeria_registrar_bloques() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-includes\class-wp-hook.php:292
+[17-Jul-2021 23:42:34 UTC] PHP   9. filemtime() C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php:62
+[18-Jul-2021 04:19:52 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:21:53 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 172
+[18-Jul-2021 04:22:41 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 172
+[18-Jul-2021 04:23:44 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:23:46 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:23:49 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:23:56 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:23:56 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:24:00 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171
+[18-Jul-2021 04:24:05 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\danie\Local Sites\la-pizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 171

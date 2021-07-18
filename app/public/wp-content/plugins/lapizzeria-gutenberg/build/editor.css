@@ -1,3 +1,5 @@
+/** Menu **/
+
 .wp-block {
     max-width: 1080px;
 }
@@ -15,8 +17,6 @@
     height: 24rem;
 }
 
-/** Bloque Menu **/ 
-
 .editor-styles-wrapper .titulo-menu {
     color: var(--rojo);
     font-family: var(--fuenteHeadings);
@@ -24,3 +24,40 @@
     font-size: 3rem;
     font-weight: 700;
 }
+
+/** Galeria **/
+
+.editor-styles-wrapper .texto-primario {
+    color: var(--rojo);
+}
+
+.imagen {
+    position: relative;
+}
+
+.imagen .borrar-imagen {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: rgba(0,0,0,.75);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen .borrar-imagen:hover {
+    cursor: pointer;
+}
+
+.borrar-imagen .dashicons {
+    color: var(--blanco);
+}
+
+.lapizzeria-agregar-imagen {
+    margin: 0 auto;
+    display: block;
+}
+

@@ -86,6 +86,125 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+
+module.exports = _arrayWithoutHoles;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+
+module.exports = _iterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableSpread;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js");
+
+var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ "./node_modules/@babel/runtime/helpers/iterableToArray.js");
+
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
+
+var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js");
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
 /***/ "./src/boxes/index.js":
 /*!****************************!*\
   !*** ./src/boxes/index.js ***!
@@ -151,45 +270,42 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
       default: 'center'
     }
   },
-  edit: props => {
+  edit: function edit(props) {
     // Extraer el contenido desde props
-    const {
-      attributes: {
-        headingBox,
-        textBox,
-        colorFondo,
-        colorTexto,
-        alineacionContenido
-      },
-      setAttributes
-    } = props; // setAttributes es una función de Gutenberg que guarda lo que leamos en la base de datos
+    var _props$attributes = props.attributes,
+        headingBox = _props$attributes.headingBox,
+        textBox = _props$attributes.textBox,
+        colorFondo = _props$attributes.colorFondo,
+        colorTexto = _props$attributes.colorTexto,
+        alineacionContenido = _props$attributes.alineacionContenido,
+        setAttributes = props.setAttributes; // setAttributes es una función de Gutenberg que guarda lo que leamos en la base de datos
 
-    const onChangeHeadingBox = nuevoHeading => {
+    var onChangeHeadingBox = function onChangeHeadingBox(nuevoHeading) {
       // esta función permite leer lo que el usuario escribe en la caja del encabezado
       setAttributes({
         headingBox: nuevoHeading
       }); // guardamos en headingBox lo que leamos en nuevoHeading
     };
 
-    const onChangeTextBox = nuevoTexto => {
+    var onChangeTextBox = function onChangeTextBox(nuevoTexto) {
       setAttributes({
         textBox: nuevoTexto
       });
     };
 
-    const onChangeColorFondo = nuevoColor => {
+    var onChangeColorFondo = function onChangeColorFondo(nuevoColor) {
       setAttributes({
         colorFondo: nuevoColor
       });
     };
 
-    const onChangeColorTexto = nuevoColor => {
+    var onChangeColorTexto = function onChangeColorTexto(nuevoColor) {
       setAttributes({
         colorTexto: nuevoColor
       });
     };
 
-    const onChangeAlinearContenido = nuevaAlineacion => {
+    var onChangeAlinearContenido = function onChangeAlinearContenido(nuevaAlineacion) {
       setAttributes({
         alineacionContenido: nuevaAlineacion
       });
@@ -238,17 +354,14 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
       value: textBox
     }))));
   },
-  save: props => {
+  save: function save(props) {
     // Extraer el contenido desde props
-    const {
-      attributes: {
-        headingBox,
-        textBox,
-        colorFondo,
-        colorTexto,
-        alineacionContenido
-      }
-    } = props; // setAttributes es una función de Gutenberg que guarda lo que leamos en la base de datos
+    var _props$attributes2 = props.attributes,
+        headingBox = _props$attributes2.headingBox,
+        textBox = _props$attributes2.textBox,
+        colorFondo = _props$attributes2.colorFondo,
+        colorTexto = _props$attributes2.colorTexto,
+        alineacionContenido = _props$attributes2.alineacionContenido; // setAttributes es una función de Gutenberg que guarda lo que leamos en la base de datos
 
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
       className: "box",
@@ -274,6 +387,129 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
 
 /***/ }),
 
+/***/ "./src/galeria/index.js":
+/*!******************************!*\
+  !*** ./src/galeria/index.js ***!
+  \******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _pizzeria_icon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pizzeria-icon.svg */ "./src/pizzeria-icon.svg");
+
+
+
+
+ // Logo para el bloque
+
+
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('lapizzeria/galeria', {
+  title: 'La Pizzeria Galeria',
+  icon: {
+    src: _pizzeria_icon_svg__WEBPACK_IMPORTED_MODULE_5__["ReactComponent"]
+  },
+  category: 'lapizzeria',
+  attributes: {
+    imagenes: {
+      type: 'array'
+    }
+  },
+  edit: function edit(props) {
+    //extraer los valores de props
+    var _props$attributes$ima = props.attributes.imagenes,
+        imagenes = _props$attributes$ima === void 0 ? [] : _props$attributes$ima,
+        setAttributes = props.setAttributes;
+
+    var borrarImagen = function borrarImagen(imagenIndex) {
+      var nuevasImagenes = imagenes.filter(function (imagen, index) {
+        return index !== imagenIndex;
+      });
+      setAttributes({
+        imagenes: nuevasImagenes
+      });
+    };
+
+    var onSeleccionarNuevaImagen = function onSeleccionarNuevaImagen(nuevaImagen) {
+      var imagen = {
+        thumb: nuevaImagen.sizes.medium.url,
+        full: nuevaImagen.sizes.full.url,
+        id: nuevaImagen.id
+      };
+      setAttributes({
+        imagenes: [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(imagenes), [imagen])
+      });
+    };
+
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: "galeria-pizzeria"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["MediaUpload"], {
+      onSelect: onSeleccionarNuevaImagen,
+      type: "image",
+      render: function render(_ref) {
+        var open = _ref.open;
+        return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+          className: "lapizzeria-agregar-imagen",
+          onClick: open,
+          icon: "format-image",
+          showTooltip: "true",
+          label: "Cambiar Imagen"
+        });
+      }
+    }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("ul", {
+      className: "listado-imagenes"
+    }, imagenes.map(function (imagen, index) {
+      return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("li", {
+        className: "imagen"
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+        className: "borrar-imagen",
+        onClick: function onClick() {
+          return borrarImagen(index);
+        }
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("span", {
+        className: "dashicons dashicons-trash"
+      })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("img", {
+        src: imagen.thumb
+      }));
+    })));
+  },
+  save: function save(props) {
+    var _props$attributes$ima2 = props.attributes.imagenes,
+        imagenes = _props$attributes$ima2 === void 0 ? [] : _props$attributes$ima2;
+
+    if (imagenes.length === 0) {
+      return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("p", null, "No hay im\xE1genes");
+    }
+
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: "galeria-pizzeria"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("ul", {
+      className: "listado-imagenes"
+    }, imagenes.map(function (imagen) {
+      return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("li", {
+        className: "imagen"
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("a", {
+        href: imagen.full,
+        "data-lightbox": "galeria"
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("img", {
+        src: imagen.thumb
+      })));
+    })));
+  }
+});
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -285,6 +521,8 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _boxes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./boxes */ "./src/boxes/index.js");
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu/index.js");
+/* harmony import */ var _galeria__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./galeria */ "./src/galeria/index.js");
+
 
 
 
@@ -348,30 +586,27 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
       default: 'Titulo Bloque'
     }
   },
-  edit: Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["withSelect"])((select, props) => {
+  edit: Object(_wordpress_data__WEBPACK_IMPORTED_MODULE_2__["withSelect"])(function (select, props) {
     // extraer los valores
-    const {
-      attributes: {
-        cantidadMostrar,
-        categoriaMenu,
-        tituloBloque
-      },
-      setAttributes
-    } = props;
+    var _props$attributes = props.attributes,
+        cantidadMostrar = _props$attributes.cantidadMostrar,
+        categoriaMenu = _props$attributes.categoriaMenu,
+        tituloBloque = _props$attributes.tituloBloque,
+        setAttributes = props.setAttributes;
 
-    const onChangeCantidadMostrar = nuevaCantidad => {
+    var onChangeCantidadMostrar = function onChangeCantidadMostrar(nuevaCantidad) {
       setAttributes({
         cantidadMostrar: parseInt(nuevaCantidad)
       });
     };
 
-    const onChangeCategoriaMenu = nuevaCategoria => {
+    var onChangeCategoriaMenu = function onChangeCategoriaMenu(nuevaCategoria) {
       setAttributes({
         categoriaMenu: nuevaCategoria
       });
     };
 
-    const onChangeTituloBloque = nuevoTitulo => {
+    var onChangeTituloBloque = function onChangeTituloBloque(nuevoTitulo) {
       setAttributes({
         tituloBloque: nuevoTitulo
       });
@@ -384,27 +619,23 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
         'categoria-menu': categoriaMenu,
         per_page: cantidadMostrar || 6
       }),
-      onChangeCantidadMostrar,
-      onChangeCategoriaMenu,
-      onChangeTituloBloque,
-      props
+      onChangeCantidadMostrar: onChangeCantidadMostrar,
+      onChangeCategoriaMenu: onChangeCategoriaMenu,
+      onChangeTituloBloque: onChangeTituloBloque,
+      props: props
     };
-  })(({
-    categorias,
-    especialidades,
-    onChangeCantidadMostrar,
-    onChangeCategoriaMenu,
-    onChangeTituloBloque,
-    props
-  }) => {
+  })(function (_ref) {
+    var categorias = _ref.categorias,
+        especialidades = _ref.especialidades,
+        onChangeCantidadMostrar = _ref.onChangeCantidadMostrar,
+        onChangeCategoriaMenu = _ref.onChangeCategoriaMenu,
+        onChangeTituloBloque = _ref.onChangeTituloBloque,
+        props = _ref.props;
     // extraer los props
-    const {
-      attributes: {
-        cantidadMostrar,
-        categoriaMenu,
-        tituloBloque
-      }
-    } = props; // verificar especialidades
+    var _props$attributes2 = props.attributes,
+        cantidadMostrar = _props$attributes2.cantidadMostrar,
+        categoriaMenu = _props$attributes2.categoriaMenu,
+        tituloBloque = _props$attributes2.tituloBloque; // verificar especialidades
 
     if (!especialidades) {
       return 'Cargando...';
@@ -429,7 +660,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
 
 
     if (categorias && categorias.length != 0) {
-      categorias.forEach(categoria => {
+      categorias.forEach(function (categoria) {
         categoria['label'] = categoria.name;
         categoria['value'] = categoria.id;
       });
@@ -481,19 +712,21 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('lap
       className: "titulo-menu"
     }, tituloBloque), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("ul", {
       className: "nuestro-menu"
-    }, especialidades.map(especialidad => Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("li", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("img", {
-      src: especialidad.imagen_destacada
-    }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      className: "platillo"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      className: "precio-platillo"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", null, especialidad.title.rendered), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "$ ", especialidad.precio))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      className: "contenido-platillo"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, {
-      value: especialidad.content.rendered
-    })))))));
+    }, especialidades.map(function (especialidad) {
+      return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("li", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("img", {
+        src: especialidad.imagen_destacada
+      }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+        className: "platillo"
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+        className: "precio-platillo"
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("h3", null, especialidad.title.rendered), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "$ ", especialidad.precio))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+        className: "contenido-platillo"
+      }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, {
+        value: especialidad.content.rendered
+      }))));
+    })));
   }),
-  save: () => {
+  save: function save() {
     return null; // no se retorna nada por aquí, el retorno se hace en el callback que esta en lapizzeria-gutenberg.php
   }
 });
@@ -533,7 +766,7 @@ function SvgPizzeriaIcon(props) {
   }))));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,dmFyIF9wYXRoLCBfZzsKCmZ1bmN0aW9uIF9leHRlbmRzKCkgeyBfZXh0ZW5kcyA9IE9iamVjdC5hc3NpZ24gfHwgZnVuY3Rpb24gKHRhcmdldCkgeyBmb3IgKHZhciBpID0gMTsgaSA8IGFyZ3VtZW50cy5sZW5ndGg7IGkrKykgeyB2YXIgc291cmNlID0gYXJndW1lbnRzW2ldOyBmb3IgKHZhciBrZXkgaW4gc291cmNlKSB7IGlmIChPYmplY3QucHJvdG90eXBlLmhhc093blByb3BlcnR5LmNhbGwoc291cmNlLCBrZXkpKSB7IHRhcmdldFtrZXldID0gc291cmNlW2tleV07IH0gfSB9IHJldHVybiB0YXJnZXQ7IH07IHJldHVybiBfZXh0ZW5kcy5hcHBseSh0aGlzLCBhcmd1bWVudHMpOyB9CgppbXBvcnQgKiBhcyBSZWFjdCBmcm9tICJyZWFjdCI7CgpmdW5jdGlvbiBTdmdQaXp6ZXJpYUljb24ocHJvcHMpIHsKICByZXR1cm4gLyojX19QVVJFX18qL1JlYWN0LmNyZWF0ZUVsZW1lbnQoInN2ZyIsIF9leHRlbmRzKHsKICAgIHhtbG5zOiAiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLAogICAgd2lkdGg6IDI1LjE2LAogICAgaGVpZ2h0OiAyMy45NTQKICB9LCBwcm9wcyksIF9wYXRoIHx8IChfcGF0aCA9IC8qI19fUFVSRV9fKi9SZWFjdC5jcmVhdGVFbGVtZW50KCJwYXRoIiwgewogICAgZmlsbDogIiMxQjY2MDYiLAogICAgZDogIk0tLjQwNS0xLjYxMmgyNy4wOXYyNy4yNTVILS40MDV6IgogIH0pKSwgX2cgfHwgKF9nID0gLyojX19QVVJFX18qL1JlYWN0LmNyZWF0ZUVsZW1lbnQoImciLCB7CiAgICBmaWxsOiAiI0ZGRiIKICB9LCAvKiNfX1BVUkVfXyovUmVhY3QuY3JlYXRlRWxlbWVudCgicGF0aCIsIHsKICAgIGQ6ICJNMi45NjUgMTguNzg0VjUuMjI4aDMuMjkzdjEwLjcwM2g1LjI0NnYyLjg1M0gyLjk2NXpNMjMuMzE2IDkuNDAyYzAgLjc5Mi0uMTQ2IDEuNDU5LS40MzkgMi4wMDFhMy42MiAzLjYyIDAgMDEtMS4xODggMS4zMTIgNS4yNTUgNS4yNTUgMCAwMS0xLjcyMy43MjggOC44NDQgOC44NDQgMCAwMS0yLjAyOS4yMjlIMTYuMzF2NS4xMTJoLTMuMjc1VjUuMjI4aDQuOTc5Yy43NCAwIDEuNDMzLjA3MyAyLjA3Ny4yMi42NDUuMTQ4IDEuMjA2LjM4MyAxLjY4NS43MDkuNDc5LjMyNS44NTUuNzU0IDEuMTMxIDEuMjgyLjI3My41My40MDkgMS4xODUuNDA5IDEuOTYzem0tMy4yNzMuMDE4YzAtLjMxOS0uMDYzLS41ODEtLjE5MS0uNzg1cy0uMy0uMzYyLS41MTctLjQ3OGEyLjE2NSAyLjE2NSAwIDAwLS43MzctLjIyOSA2LjA1MyA2LjA1MyAwIDAwLS44NTItLjA1OEgxNi4zMXYzLjE5N2gxLjM3N2MuMzA3IDAgLjYwMS0uMDI1Ljg4Mi0uMDc2YTIuMzkgMi4zOSAwIDAwLjc1Ni0uMjY5Yy4yMjQtLjEyNy4zOTgtLjI5Ny41MjYtLjUwOC4xMjgtLjIwOS4xOTItLjQ3My4xOTItLjc5NHoiCiAgfSkpKSk7Cn0KCmV4cG9ydCBkZWZhdWx0ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBEOTRiV3dnZG1WeWMybHZiajBpTVM0d0lpQmxibU52WkdsdVp6MGlkWFJtTFRnaVB6NE5DandoTFMwZ1IyVnVaWEpoZEc5eU9pQkJaRzlpWlNCSmJHeDFjM1J5WVhSdmNpQXhOaTR3TGpBc0lGTldSeUJGZUhCdmNuUWdVR3gxWnkxSmJpQXVJRk5XUnlCV1pYSnphVzl1T2lBMkxqQXdJRUoxYVd4a0lEQXBJQ0F0TFQ0TkNqd2hSRTlEVkZsUVJTQnpkbWNnVUZWQ1RFbERJQ0l0THk5WE0wTXZMMFJVUkNCVFZrY2dNUzR4THk5RlRpSWdJbWgwZEhBNkx5OTNkM2N1ZHpNdWIzSm5MMGR5WVhCb2FXTnpMMU5XUnk4eExqRXZSRlJFTDNOMlp6RXhMbVIwWkNJK0RRbzhjM1puSUhabGNuTnBiMjQ5SWpFdU1TSWdhV1E5SWtOaGNHRmZNU0lnZUcxc2JuTTlJbWgwZEhBNkx5OTNkM2N1ZHpNdWIzSm5Mekl3TURBdmMzWm5JaUI0Yld4dWN6cDRiR2x1YXowaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1UazVPUzk0YkdsdWF5SWdlRDBpTUhCNElpQjVQU0l3Y0hnaURRb0pJSGRwWkhSb1BTSXlOUzR4Tm5CNElpQm9aV2xuYUhROUlqSXpMamsxTkhCNElpQjJhV1YzUW05NFBTSXdJREFnTWpVdU1UWWdNak11T1RVMElpQmxibUZpYkdVdFltRmphMmR5YjNWdVpEMGlibVYzSURBZ01DQXlOUzR4TmlBeU15NDVOVFFpSUhodGJEcHpjR0ZqWlQwaWNISmxjMlZ5ZG1VaVBnMEtQSEpsWTNRZ2VEMGlMVEF1TkRBMUlpQjVQU0l0TVM0Mk1USWlJR1pwYkd3OUlpTXhRalkyTURZaUlIZHBaSFJvUFNJeU55NHdPU0lnYUdWcFoyaDBQU0l5Tnk0eU5UVWlMejROQ2p4blBnMEtDVHh3WVhSb0lHWnBiR3c5SWlOR1JrWkdSa1lpSUdROUlrMHlMamsyTlN3eE9DNDNPRFJXTlM0eU1qaG9NeTR5T1ROMk1UQXVOekF6YURVdU1qUTJkakl1T0RVelNESXVPVFkxZWlJdlBnMEtDVHh3WVhSb0lHWnBiR3c5SWlOR1JrWkdSa1lpSUdROUlrMHlNeTR6TVRZc09TNDBNREpqTUN3d0xqYzVNaTB3TGpFME5pd3hMalExT1Mwd0xqUXpPU3d5TGpBd01XTXRNQzR5T1RRc01DNDFOREl0TUM0Mk9Ea3NNQzQ1T0MweExqRTRPQ3d4TGpNeE1nMEtDUWxqTFRBdU5EazRMREF1TXpNeUxURXVNRGN5TERBdU5UYzBMVEV1TnpJekxEQXVOekk0WXkwd0xqWTFNU3d3TGpFMU15MHhMak15T0N3d0xqSXlPUzB5TGpBeU9Td3dMakl5T1dndE1TNDJNamQyTlM0eE1USm9MVE11TWpjMVZqVXVNakk0YURRdU9UYzVEUW9KQ1dNd0xqYzBMREFzTVM0ME16TXNNQzR3TnpNc01pNHdOemNzTUM0eU1tTXdMalkwTlN3d0xqRTBPQ3d4TGpJd05pd3dMak00TXl3eExqWTROU3d3TGpjd09XTXdMalEzT1N3d0xqTXlOU3d3TGpnMU5Td3dMamMxTkN3eExqRXpNU3d4TGpJNE1nMEtDUWxETWpNdU1UZ3NOeTQ1Tmprc01qTXVNekUyTERndU5qSTBMREl6TGpNeE5pdzVMalF3TW5vZ1RUSXdMakEwTXl3NUxqUXlZekF0TUM0ek1Ua3RNQzR3TmpNdE1DNDFPREV0TUM0eE9URXRNQzQzT0RWekxUQXVNeTB3TGpNMk1pMHdMalV4Tnkwd0xqUTNPQTBLQ1FsakxUQXVNakU0TFRBdU1URTJMVEF1TkRZeUxUQXVNVGt5TFRBdU56TTNMVEF1TWpJNVl5MHdMakkzTkMwd0xqQXpPUzB3TGpVMU9TMHdMakExT0Mwd0xqZzFNaTB3TGpBMU9HZ3RNUzQwTXpaMk15NHhPVGRvTVM0ek56ZGpNQzR6TURjc01Dd3dMall3TVMwd0xqQXlOU3d3TGpnNE1pMHdMakEzTmcwS0NRbGpNQzR5T0Mwd0xqQTFNaXd3TGpVek1pMHdMakUwTVN3d0xqYzFOaTB3TGpJMk9XTXdMakl5TkMwd0xqRXlOeXd3TGpNNU9DMHdMakk1Tnl3d0xqVXlOaTB3TGpVd09FTXhPUzQ1Tnprc01UQXVNREExTERJd0xqQTBNeXc1TGpjME1Td3lNQzR3TkRNc09TNDBNbm9pTHo0TkNqd3ZaejROQ2p3dmMzWm5QZzBLIjsKZXhwb3J0IHsgU3ZnUGl6emVyaWFJY29uIGFzIFJlYWN0Q29tcG9uZW50IH07");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNS4xNnB4IiBoZWlnaHQ9IjIzLjk1NHB4IiB2aWV3Qm94PSIwIDAgMjUuMTYgMjMuOTU0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNS4xNiAyMy45NTQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeD0iLTAuNDA1IiB5PSItMS42MTIiIGZpbGw9IiMxQjY2MDYiIHdpZHRoPSIyNy4wOSIgaGVpZ2h0PSIyNy4yNTUiLz4NCjxnPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yLjk2NSwxOC43ODRWNS4yMjhoMy4yOTN2MTAuNzAzaDUuMjQ2djIuODUzSDIuOTY1eiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yMy4zMTYsOS40MDJjMCwwLjc5Mi0wLjE0NiwxLjQ1OS0wLjQzOSwyLjAwMWMtMC4yOTQsMC41NDItMC42ODksMC45OC0xLjE4OCwxLjMxMg0KCQljLTAuNDk4LDAuMzMyLTEuMDcyLDAuNTc0LTEuNzIzLDAuNzI4Yy0wLjY1MSwwLjE1My0xLjMyOCwwLjIyOS0yLjAyOSwwLjIyOWgtMS42Mjd2NS4xMTJoLTMuMjc1VjUuMjI4aDQuOTc5DQoJCWMwLjc0LDAsMS40MzMsMC4wNzMsMi4wNzcsMC4yMmMwLjY0NSwwLjE0OCwxLjIwNiwwLjM4MywxLjY4NSwwLjcwOWMwLjQ3OSwwLjMyNSwwLjg1NSwwLjc1NCwxLjEzMSwxLjI4Mg0KCQlDMjMuMTgsNy45NjksMjMuMzE2LDguNjI0LDIzLjMxNiw5LjQwMnogTTIwLjA0Myw5LjQyYzAtMC4zMTktMC4wNjMtMC41ODEtMC4xOTEtMC43ODVzLTAuMy0wLjM2Mi0wLjUxNy0wLjQ3OA0KCQljLTAuMjE4LTAuMTE2LTAuNDYyLTAuMTkyLTAuNzM3LTAuMjI5Yy0wLjI3NC0wLjAzOS0wLjU1OS0wLjA1OC0wLjg1Mi0wLjA1OGgtMS40MzZ2My4xOTdoMS4zNzdjMC4zMDcsMCwwLjYwMS0wLjAyNSwwLjg4Mi0wLjA3Ng0KCQljMC4yOC0wLjA1MiwwLjUzMi0wLjE0MSwwLjc1Ni0wLjI2OWMwLjIyNC0wLjEyNywwLjM5OC0wLjI5NywwLjUyNi0wLjUwOEMxOS45NzksMTAuMDA1LDIwLjA0Myw5Ljc0MSwyMC4wNDMsOS40MnoiLz4NCjwvZz4NCjwvc3ZnPg0K");
 
 
 /***/ }),

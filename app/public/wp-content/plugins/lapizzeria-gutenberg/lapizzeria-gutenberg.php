@@ -64,7 +64,8 @@ function lapizzeria_registrar_bloques() {
 
 	// Arreglo de bloques
 	$blocks = [
-		'lapizzeria/boxes' // mapea tanto la versión php como js
+		'lapizzeria/boxes', // mapea tanto la versión php como js
+		'lapizzeria/galeria'
 	];
 
 	// Recorrer bloques y agregar scripts y styles
@@ -163,3 +164,10 @@ function lapizzeria_especialidades_frontend($atts) { // con $atts podemos accede
 
 	return $cuerpo;
 }
+
+/** Agrega lightbox a plugin */
+function lapizzeria_frontend_scripts() {
+	wp_enqueue_style('lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css', array(), '2.11.3');
+	wp_enqueue_script('lightboxjs', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js', array('jquery'), '2.11.3', true);
+}
+add_action('wp_enqueue_scripts', 'lapizzeria_frontend_scripts');
