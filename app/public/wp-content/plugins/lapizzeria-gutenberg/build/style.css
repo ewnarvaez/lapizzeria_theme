@@ -141,3 +141,74 @@ ul.listado-imagenes {
     display: block;
     width: 100%;
 }
+
+/** Hero Block **/
+
+/** BOTONES **/
+.boton {
+	/* para que ocupe todo el ancho disponible */
+	display: block;
+	/* para que ocupe todo el ancho disponible si esta dentro de un contenedor flex*/
+	flex: 1;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.4rem;
+	font-family: var(--fuenteHeadings);
+	padding: 1rem 3rem;
+	border-radius: .5rem;
+	color: var(--blanco);
+	border: none;
+    text-decoration: none;
+}
+
+.boton:hover {
+	cursor: pointer;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+	.boton {
+		/* para que NO ocupe todo el ancho disponible */
+		display: inline-block;
+		/* para que NO ocupe todo el ancho disponible si esta dentro de un contenedor flex*/
+		flex: 0 0 auto;
+	}
+}
+
+.hero-block .boton {
+    margin-top: 2rem;
+}
+
+.boton-primario {
+	background-color: var(--naranja);
+}
+
+.boton-secundario {
+	background-color: var(--rojo);
+}
+
+.hero-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-size: cover;
+}
+
+.hero-block h1,
+.hero-block p {
+    color: var(--blanco);
+    margin: .5rem;
+}
+
+.alignfull {
+    margin: 0 calc(50% - 50vw);
+    max-width: 100vw;
+    width: 100vw;
+}
+
+.contenido-hero {
+   max-width: 1200px; 
+   margin: 0 auto;
+}

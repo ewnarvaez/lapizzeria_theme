@@ -65,7 +65,8 @@ function lapizzeria_registrar_bloques() {
 	// Arreglo de bloques
 	$blocks = [
 		'lapizzeria/boxes', // mapea tanto la versión php como js
-		'lapizzeria/galeria'
+		'lapizzeria/galeria',
+		'lapizzeria/hero'
 	];
 
 	// Recorrer bloques y agregar scripts y styles

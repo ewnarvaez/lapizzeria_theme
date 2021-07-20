@@ -61,3 +61,16 @@
     display: block;
 }
 
+/** Hero Block **/
+.hero-block .lapizzeria-agregar-imagen .dashicon {
+    color: var(--blanco);
+}
+
+.editor-styles-wrapper .titulo {
+    color: var(--blanco);
+}
+
+.hero-block .components-icon-button .dashicon,
+.hero-block button.components-button.components-toolbar__control.has-icon {
+    color: var(--blanco);
+}

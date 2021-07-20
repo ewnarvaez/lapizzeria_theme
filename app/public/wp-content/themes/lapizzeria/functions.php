@@ -7,6 +7,9 @@ function lapizzeria_setup() {
 	// Soporte a los estilos por default de Gutenberg en tu tema
 	add_theme_support('wp-block-styles');
 
+	// Soporte para contenido wide y full
+	add_theme_support( 'align-wide' );
+
 	// Paleta de colores del tema
 	add_theme_support('editor-color-palette', array(
 		array(
