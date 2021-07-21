@@ -208,7 +208,36 @@ ul.listado-imagenes {
     width: 100vw;
 }
 
-.contenido-hero {
+.contenido-hero,
+.contenido-bloque {
    max-width: 1200px; 
    margin: 0 auto;
+}
+
+
+/** BLOQUE TEXTO-IMAGEN **/
+.imagen-texto-bloque {
+    background-size: cover;
+    padding: 8rem 2rem;
+}
+
+.imagen-texto-bloque .boton-secundario {
+    margin-bottom: 2rem;
+}
+
+.texto-bloque h1,
+.texto-bloque p {
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) { 
+    .contenido-bloque {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .imagen-texto-bloque .boton-secundario {
+        margin-bottom: 0;
+    }    
 }

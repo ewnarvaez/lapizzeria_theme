@@ -66,7 +66,8 @@ function lapizzeria_registrar_bloques() {
 	$blocks = [
 		'lapizzeria/boxes', // mapea tanto la versión php como js
 		'lapizzeria/galeria',
-		'lapizzeria/hero'
+		'lapizzeria/hero',
+		'lapizzeria/textoimagen'
 	];
 
 	// Recorrer bloques y agregar scripts y styles
@@ -120,7 +121,7 @@ function lapizzeria_especialidades_frontend($atts) { // con $atts podemos accede
 	$especialidades = wp_get_recent_posts(array(
 		'post_type' => 'especialidades',
 		'post_status' => 'publish',
-		'numberposts' => $atts['cantidadMostrar'],
+		'numberposts' => $cantidad,
 		'tax_query' => $tax_query
 	));
 

@@ -26,8 +26,7 @@ registerBlockType('lapizzeria/menu', {
 			type: 'number'
 		},
 		categoriaMenu: {
-			type: 'number',
-			default: 4
+			type: 'number'
 		},
 		tituloBloque: {
 			type: 'string',
@@ -37,7 +36,7 @@ registerBlockType('lapizzeria/menu', {
 	edit: withSelect((select, props) => {
 
 		// extraer los valores
-		const { attributes: { cantidadMostrar, categoriaMenu, tituloBloque }, setAttributes } = props;
+		const { attributes: { cantidadMostrar, categoriaMenu }, setAttributes } = props;
 
 		const onChangeCantidadMostrar = nuevaCantidad => {
 			setAttributes({ cantidadMostrar: parseInt(nuevaCantidad) });
@@ -57,7 +56,7 @@ registerBlockType('lapizzeria/menu', {
 
 			especialidades: select("core").getEntityRecords('postType', 'especialidades', {
 				'categoria-menu': categoriaMenu,
-				per_page: cantidadMostrar || 6
+				per_page: cantidadMostrar || 5
 			}),
 			onChangeCantidadMostrar,
 			onChangeCategoriaMenu,
@@ -121,7 +120,7 @@ registerBlockType('lapizzeria/menu', {
 									onChange={onChangeCantidadMostrar}
 									min={2}
 									max={10}
-									value={cantidadMostrar || 6}
+									value={cantidadMostrar || 5}
 								/>
 							</div>
 						</div>
