@@ -74,3 +74,8 @@
 .hero-block button.components-button.components-toolbar__control.has-icon {
     color: var(--blanco);
 }
+
+/** Bloque Contenedor **/
+.contenido-bloque .components-button {
+    color: var(--rojo);
+}

@@ -241,3 +241,51 @@ ul.listado-imagenes {
         margin-bottom: 0;
     }    
 }
+
+/** BLOQUE CONTENDOR **/
+.bloque-contenedor {
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.titulo-contacto {
+    color: var(--rojo);
+    text-align: center;
+}
+
+.contenido-bloque {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) { 
+    .contenido-bloque {
+        min-height: 80rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }    
+}
+
+.bloques-internos {
+    padding: 3rem;
+    margin: 3rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) { 
+    .bloques-internos {
+        grid-column: 2 / 3;
+    }
+}
+
+/* Formulario */
+.wpcf7 p label {
+    font-size: 2rem;
+}
+
+.wpcf7-form-control {
+    padding: 2rem;
+    border: 1px solid var(--grisClaro);
+    width: 100%;
+}
